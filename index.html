@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title of the webpage displayed in the browser tab -->
+  <title>Business Boost Agency</title>
+
+  <!-- Link to external stylesheet for custom styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Link to FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section: Contains site branding and navigation links -->
+  <header class="header">
+    <div class="container header-content">
+      <!-- Main branding of the agency -->
+      <h1><i class="fas fa-globe"></i>Business Boost Agency</h1>
+
+      <!-- Navigation menu links -->
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#signup">Sign Up</a>
+        
+        <!-- User container hidden initially, will show when logged in -->
+        <div id="user-container" class="user-container hidden">
+          <!-- User icon and logout button -->
+          <div id="user-icon" class="user-icon"></div>
+          <button id="logout-btn" class="logout-btn">Logout</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section: A large banner to capture user attention -->
+  <section class="hero fade-in">
+    <h2>Digital Marketing That Delivers</h2>
+    <p>Boost your brand visibility and drive more traffic with our expert strategies.</p>
+    <button onclick="scrollToContact()">Get Started</button> <!-- Scrolls user to the contact section -->
+  </section>
+
+  <!-- Services Section: Highlighting different services offered -->
+  <section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="card-grid">
+      <!-- Service 1: SEO Optimization -->
+      <div class="card fade-in-up delay-1">
+        <i class="fas fa-search fa-2x service-icon icon-seo"></i>
+        <h4>SEO Optimization</h4>
+        <p>Top-notch SEO strategies to boost visibility.</p>
+      </div>
+
+      <!-- Service 2: Social Media Marketing -->
+      <div class="card fade-in-up delay-2">
+        <i class="fab fa-facebook-messenger fa-2x service-icon icon-social"></i>
+        <h4>Social Media Marketing</h4>
+        <p>Grow your social presence and engagement.</p>
+      </div>
+
+      <!-- Service 3: Content Creation -->
+      <div class="card fade-in-up delay-3">
+        <i class="fas fa-pen-nib fa-2x service-icon icon-content"></i>
+        <h4>Content Creation</h4>
+        <p>Engaging content tailored for your brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section: Showcasing the agency's work -->
+  <section id="portfolio" class="section">
+    <h3>Our Portfolio</h3>
+    <div class="card-grid">
+      <!-- Portfolio Project 1 -->
+      <div class="card fade-in-up delay-1">
+        <img src="\Users\abhis\OneDrive\Desktop\DMA\Image\project1.jpg" alt="Project 1" class="portfolio-img" />
+        <h4>Brand Campaign</h4>
+        <p>Social media branding and reach strategy.</p>
+      </div>
+
+      <!-- Portfolio Project 2 -->
+      <div class="card fade-in-up delay-2">
+        <img src="\Users\abhis\OneDrive\Desktop\DMA\Image\project2.jpg" alt="Project 2" class="portfolio-img" />
+        <h4>Website Redesign</h4>
+        <p>Modern UI/UX design for a local business.</p>
+      </div>
+
+      <!-- Portfolio Project 3 -->
+      <div class="card fade-in-up delay-3">
+        <img src="\Users\abhis\OneDrive\Desktop\DMA\Image\project3.jpg" alt="Project 3" class="portfolio-img" />
+        <h4>Ad Campaign</h4>
+        <p>Creative visuals for a paid ad launch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section: Client reviews and feedback -->
+  <section id="testimonials" class="section light-bg">
+    <h3>What Our Clients Say</h3>
+    <div class="card-grid">
+      <div class="card">
+        <p>"Great service and results!"</p>
+        <strong>- Client 1</strong>
+      </div>
+      <div class="card">
+        <p>"Amazing team and strategy."</p>
+        <strong>- Client 2</strong>
+      </div>
+      <div class="card">
+        <p>"Highly recommended!"</p>
+        <strong>- Client 3</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section: A form for visitors to reach out -->
+  <section id="contact" class="section">
+    <h3>Contact Us</h3>
+    <form id="contact-form">
+      <!-- Contact Form -->
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Sign Up Section: A form for users to sign up -->
+  <section id="signup" class="section">
+    <h3>Stay Updated</h3>
+    <form class="signup-form">
+      <!-- Sign Up Form -->
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <input type="password" id="password" placeholder="Enter your password" required />
+      <div class="form-buttons">
+        <button type="submit" class="btn-primary">Sign Up</button>
+        <button type="button" class="btn-secondary" id="login-btn">Login</button>
+      </div>
+      <p id="form-message" class="form-message"></p>
+    </form>
+  </section>
+
+  <!-- Footer Section: Copyright and branding -->
+  <footer class="footer">
+    <p>&copy; 2025 Business Boost Agency. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file for interactivity -->
+  <script src="script.js"></script>
+</body>
+
+</html>
